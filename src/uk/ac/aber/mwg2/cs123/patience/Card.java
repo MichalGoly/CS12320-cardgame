@@ -1,6 +1,7 @@
-package uk.ac.aber.mwg2.cs123.patience.gui;
+package uk.ac.aber.mwg2.cs123.patience;
 
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
@@ -51,7 +52,7 @@ public class Card {
 	
 	// Loads an appropriate card image depending on the suit and value
 	private void loadImage() throws IOException {
-		img = ImageIO.read(getClass().getResource(
-				"res/" + value.toString() + suit.toString() + ".gif"));
+		String path = "res/" + value.toString() + suit.toString() + ".gif";
+		img = ImageIO.read(new File(path));
 	}
 }

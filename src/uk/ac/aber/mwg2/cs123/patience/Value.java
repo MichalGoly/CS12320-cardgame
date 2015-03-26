@@ -1,4 +1,4 @@
-package uk.ac.aber.mwg2.cs123.patience.gui;
+package uk.ac.aber.mwg2.cs123.patience;
 
 /**
  * Value enum represents a value of a card. Each value has its 
@@ -18,7 +18,7 @@ public enum Value {
 	SEVEN("7"), 
 	EIGHT("8"),
 	NINE("9"),
-	TEN("10"), 
+	TEN("t"), 
 	JACK("j"), 
 	QUEEN("q"),
 	KING("k");
@@ -27,6 +27,24 @@ public enum Value {
 	
 	private Value(String value) {
 		this.value = value;
+	}
+	
+	/**
+	 * Static method which creates and returns an Enum based on the provided
+	 * String value. 
+	 * 
+	 * @param string A String representation of the required Enum 
+	 * @return Either the required Enum or a null for an invalid input
+	 */
+	public static Value fromString(String string) {
+		Value result = null;
+		for (Value v : Value.values()) {
+			if (string.equals(v.value)) {
+				result = v;
+				break;
+			}
+		}
+		return result;
 	}
 	
 	/**
