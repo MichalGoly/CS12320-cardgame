@@ -1,5 +1,6 @@
 package uk.ac.aber.mwg2.cs123.patience;
 
+import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -7,8 +8,9 @@ import javax.swing.UIManager;
 
 public class Game extends JFrame {
 	
-	private Table table;
 	private ScorePanel scorePanel;
+	private Table table;	
+	private ButtonPanel buttonPanel;
 	
 	private final String WINDOW_TITLE = "Patience Game";
 	
@@ -19,7 +21,11 @@ public class Game extends JFrame {
 	
 	private void initComponents() {
 		scorePanel = new ScorePanel();
-		add(scorePanel);
+		add(scorePanel, BorderLayout.NORTH);
+		table = new Table();
+		add(table, BorderLayout.CENTER);
+		buttonPanel = new ButtonPanel(table);
+		add(buttonPanel, BorderLayout.SOUTH);
 	}
 	
 	private void initFrame() {
