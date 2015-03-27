@@ -1,12 +1,11 @@
 package uk.ac.aber.mwg2.cs123.patience;
 
+import java.io.File;
 import java.io.IOException;
-import java.nio.file.DirectoryStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
@@ -19,11 +18,13 @@ import javax.swing.JOptionPane;
  *
  */
 public class Pack {
-	
-	private List<Card> cards;
 
-	private static final String CARDS_DIR = "res/";
-	
+	private List<Card> cards;
+	private PackDialog packDialog;
+	private boolean shuffled = false;
+
+	private final String PACK_FILE = "pack.txt";
+
 	/**
 	 * Creates a sorted 52 cards pack
 	 */
@@ -40,27 +41,48 @@ public class Pack {
 			System.exit(-1);
 		}
 	}
-	
-	// Loads 52 cards into the 'cards' list by iterating over the directory
-	// where card images are stored. 
-	private void loadCards() throws IOException {
-		Path dir = Paths.get(CARDS_DIR);
-		try (DirectoryStream<Path> paths = Files.newDirectoryStream(dir)) {
-			for (Path p : paths) {
-				String value = p.getFileName().toString().substring(0, 1);
-				String suit = p.getFileName().toString().substring(1, 2);
-				
-				// ignore the reversed card
-				if (!value.equals("b")) {
-					cards.add(new Card(
-							Suit.fromString(suit), Value.fromString(value)));
-				}
-			}
+
+	/**
+	 * @return list of cards in the pack
+	 */
+	public List<Card> getCards() {
+		return cards;
+	}
+
+	/**
+	 * Creates a modal dialog which displays current pack
+	 */
+	public void diplayPack() {
+		if (packDialog == null) {
+			packDialog = new PackDialog(this);
+		}
+		packDialog.repaint();
+		packDialog.setVisible(true);
+	}
+
+	/**
+	 * Shuffles the pack of cards when called for the first time. Every other
+	 * attept to use it will fail and notify the user.
+	 */
+	public void shuffle() {
+		if (!shuffled) {
+			Collections.shuffle(cards);
+			shuffled = true;
+		} else {
+			JOptionPane.showMessageDialog(packDialog,
+					"This pack has been already shuffled.");
 		}
 	}
-	
-	// TEST
-	public static void main(String[] args) {
-		new Pack();
+
+	// Loads 52 cards into the 'cards' list.
+	private void loadCards() throws IOException {
+		try (Scanner in = new Scanner(new File(PACK_FILE))) {
+			int num = Integer.parseInt(in.nextLine());
+			for (int i = 0; i < num; i++) {
+				String[] cardInfo = in.nextLine().split(":");
+				cards.add(new Card(Suit.fromString(cardInfo[0]), Value
+						.fromString(cardInfo[1])));
+			}
+		}
 	}
 }
