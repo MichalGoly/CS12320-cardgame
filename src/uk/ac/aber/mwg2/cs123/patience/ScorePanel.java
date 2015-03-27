@@ -37,7 +37,7 @@ public class ScorePanel extends JPanel {
 		highScore = loadHighScore();
 
 		setPreferredSize(new Dimension(DEFAULT_WIDTH, DEFAULT_HEIGHT));
-		setBackground(new Color(234, 0, 255));
+		setBackground(new Color(10, 103, 103));
 	}
 	
 	/**
@@ -55,7 +55,7 @@ public class ScorePanel extends JPanel {
 		Graphics2D g2 = (Graphics2D) g;
 
 		g2.setFont(font);
-		g2.setColor(new Color(94, 255, 77));
+		g2.setColor(new Color(151, 199, 199));
 		g2.drawString(CURRENT_SCORE_LABEL, 5, 20);
 		g2.drawString(currentScore, 100, 20);
 		g2.drawString(HIGH_SCORE_LABEL, 200, 20);

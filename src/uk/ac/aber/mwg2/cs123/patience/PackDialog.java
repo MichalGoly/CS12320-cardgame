@@ -42,7 +42,7 @@ public class PackDialog extends JDialog {
 		add(buttonPanel, BorderLayout.SOUTH);
 		
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		setSize(new Dimension(screenSize.width / 2, 190));
+		setSize(new Dimension(screenSize.width / 2, 195));
 		setLocationRelativeTo(null);
 		setModalityType(ModalityType.APPLICATION_MODAL);
 		setTitle(TITLE);
@@ -73,7 +73,6 @@ public class PackDialog extends JDialog {
 				// Width of card and two pixels to make some space between cards
 				x += 72 + 2;
 			}
-
 		}
 	}
 }

@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import javax.swing.JScrollPane;
 import javax.swing.UIManager;
 
 public class Game extends JFrame {
@@ -23,7 +24,7 @@ public class Game extends JFrame {
 		scorePanel = new ScorePanel();
 		add(scorePanel, BorderLayout.NORTH);
 		table = new Table();
-		add(table, BorderLayout.CENTER);
+		add(new JScrollPane(table), BorderLayout.CENTER);
 		buttonPanel = new ButtonPanel(table);
 		add(buttonPanel, BorderLayout.SOUTH);
 	}

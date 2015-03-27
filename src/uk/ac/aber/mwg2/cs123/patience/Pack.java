@@ -48,7 +48,20 @@ public class Pack {
 	public List<Card> getCards() {
 		return cards;
 	}
-
+	
+	/**
+	 * Returns and removes the first card from the pack. Note that a null will 
+	 * be returned if the pack is empty.
+	 * @return Card from the 'head' of the pack or a null if the pack is empty
+	 */
+	public Card dealCard() {
+		if (!cards.isEmpty()) {
+			return cards.remove(0);
+		} else {
+			return null;
+		}
+	}
+	
 	/**
 	 * Creates a modal dialog which displays current pack
 	 */

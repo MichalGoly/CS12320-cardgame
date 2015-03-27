@@ -13,7 +13,7 @@ public class ButtonPanel extends JPanel {
 	
 	private Table table;
 	
-	private final int DEFAULT_HEIGHT = 40;
+	private final int DEFAULT_HEIGHT = 70;
 	
 	public ButtonPanel(Table table) {
 		this.table = table;
@@ -30,16 +30,14 @@ public class ButtonPanel extends JPanel {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				
+				table.getPack().diplayPack();
 			}
 		}));
 		gamePanel.add(new JButton(new AbstractAction("Shuffle") {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				
+				table.getPack().shuffle();				
 			}
 		}));
 		add(gamePanel);
@@ -54,7 +52,7 @@ public class ButtonPanel extends JPanel {
 				
 			}
 		}));
-		automationPanel.add(new JButton(new AbstractAction("X times") {
+		automationPanel.add(new JButton(new AbstractAction("x Times") {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -63,7 +61,6 @@ public class ButtonPanel extends JPanel {
 			}
 		}));
 		add(automationPanel);
-		
 		
 	}
 	
