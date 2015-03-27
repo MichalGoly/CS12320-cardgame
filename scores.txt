@@ -1,0 +1,4 @@
+3
+30:Michal
+20:John
+10:Bob

@@ -1,5 +1,8 @@
 package uk.ac.aber.mwg2.cs123.patience;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
 import javax.swing.JPanel;
 
 /**
@@ -15,6 +18,11 @@ import javax.swing.JPanel;
  */
 public class Table extends JPanel {
 	
+	private final int DEFAULT_HEIGHT = 400;
 	
+	public Table() {
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		setPreferredSize(new Dimension(screenSize.width, DEFAULT_HEIGHT));
+	}
 	
 }

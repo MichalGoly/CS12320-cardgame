@@ -7,6 +7,9 @@ import javax.swing.UIManager;
 
 public class Game extends JFrame {
 	
+	private Table table;
+	private ScorePanel scorePanel;
+	
 	private final String WINDOW_TITLE = "Patience Game";
 	
 	public Game() {
@@ -15,7 +18,8 @@ public class Game extends JFrame {
 	}
 	
 	private void initComponents() {
-		
+		scorePanel = new ScorePanel();
+		add(scorePanel);
 	}
 	
 	private void initFrame() {
