@@ -1,12 +1,12 @@
 package uk.ac.aber.mwg2.cs123.patience;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 import java.util.Scanner;
 
+import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
 
 /**
@@ -17,19 +17,24 @@ import javax.swing.JOptionPane;
  * @since 26 March 2015
  *
  */
-public class Pack {
+public class Pack extends CardsCollection {
 
-	private List<Card> cards;
 	private PackDialog packDialog;
 	private boolean shuffled = false;
-
+	private BufferedImage img;
+	
 	private final String PACK_FILE = "pack.txt";
-
+	private final String IMG_FILE = "res/bb.gif";
+	
 	/**
 	 * Creates a sorted 52 cards pack
 	 */
 	public Pack() {
-		cards = new ArrayList<Card>(52);
+		super();
+		
+		// load the image of a reversed card
+		loadImage();
+		
 		try {
 			loadCards();
 		} catch (IOException e) {
@@ -41,12 +46,14 @@ public class Pack {
 			System.exit(-1);
 		}
 	}
-
+	
 	/**
-	 * @return list of cards in the pack
+	 * Returns an image of a reversed playing card. It represents the whole
+	 * pack placed on the table upside down.
+	 * @return Image of the reversed pack
 	 */
-	public List<Card> getCards() {
-		return cards;
+	public BufferedImage getImage() {
+		return img;
 	}
 	
 	/**
@@ -55,8 +62,8 @@ public class Pack {
 	 * @return Card from the 'head' of the pack or a null if the pack is empty
 	 */
 	public Card dealCard() {
-		if (!cards.isEmpty()) {
-			return cards.remove(0);
+		if (!getCards().isEmpty()) {
+			return getCards().remove(0);
 		} else {
 			return null;
 		}
@@ -79,21 +86,31 @@ public class Pack {
 	 */
 	public void shuffle() {
 		if (!shuffled) {
-			Collections.shuffle(cards);
+			Collections.shuffle(getCards());
 			shuffled = true;
 		} else {
 			JOptionPane.showMessageDialog(packDialog,
 					"This pack has been already shuffled.");
 		}
 	}
-
+	
+	// Loads the image of a reversed card, as pack will be upside down
+	private void loadImage() {
+		try {
+			img = ImageIO.read(new File(IMG_FILE));
+		} catch (IOException e) {
+			JOptionPane.showMessageDialog(null, "Unable to load the image of a "
+					+ "reversed card into deck", "Error", JOptionPane.ERROR_MESSAGE);
+		}
+	}
+	
 	// Loads 52 cards into the 'cards' list.
 	private void loadCards() throws IOException {
 		try (Scanner in = new Scanner(new File(PACK_FILE))) {
 			int num = Integer.parseInt(in.nextLine());
 			for (int i = 0; i < num; i++) {
 				String[] cardInfo = in.nextLine().split(":");
-				cards.add(new Card(Suit.fromString(cardInfo[0]), Value
+				addCard(new Card(Suit.fromString(cardInfo[0]), Value
 						.fromString(cardInfo[1])));
 			}
 		}

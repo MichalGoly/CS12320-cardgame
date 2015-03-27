@@ -21,10 +21,18 @@ public abstract class CardsCollection {
 	}
 	
 	/**
-	 * @return 
+	 * @return A List of cards in the collection
 	 */
 	public List<Card> getCards() {
 		return cards;
+	}
+	
+	/**
+	 * Adds a card at the end of the collection.
+	 * @param card New card to be added
+	 */
+	public void addCard(Card card) {
+		cards.add(card);
 	}
 	
 }
