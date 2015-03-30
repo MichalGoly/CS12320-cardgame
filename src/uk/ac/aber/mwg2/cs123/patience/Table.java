@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Rectangle;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -24,17 +25,20 @@ public class Table extends JPanel {
 	
 	private final int GAP_BETWEEN_CARDS = 6;
 	private final int DEFAULT_HEIGHT = 300;
-	// 60 is the additional space on both sides of the panel
+	// 30 is the additional space on both sides of the panel
 	private final int DEFAULT_WIDTH = 
-			60 * 2 + Card.IMG_WIDTH * 52 + GAP_BETWEEN_CARDS * 51;
+			30 * 2 + Card.IMG_WIDTH * 52 + GAP_BETWEEN_CARDS * 51;
 	
 	private Pack pack;
 	private Pile pile;
+	// Locations where images will be drawn
+	private Rectangle[] fields;
 	
 	public Table() {
 		pack = new Pack();
 		pile = new Pile();
-		init();
+		initImgBoundries();
+		initComponent();
 	}
 	
 	/**
@@ -50,21 +54,42 @@ public class Table extends JPanel {
 		Graphics2D g2 = (Graphics2D) g;
 		
 		// print the pile
-		int x = 30;
-		int y = 30;
+		int i = 0;
 		for (Card c : pile.getCards()) {
+			int x = (int) fields[i].getX();
+			int y = (int) fields[i].getY();
 			g2.drawImage(c.getImage(), null, x, y);
-			x += Card.IMG_WIDTH + 6;
+			i++;
 		}
 			
 		// print an image of the reversed card, which represents the pack
 		if (!pack.getCards().isEmpty()) {
-			g2.drawImage(pack.getImage(), null, 60,
-					2 * y + Card.IMG_HEIGHT);
+			int x = (int) fields[52].getX();
+			int y = (int) fields[52].getY();
+			g2.drawImage(pack.getImage(), null, x, y); 
 		}
 	}
 	
-	private void init() {
+	// Generates boundries of each image that will be drawn on the table. This
+	// will enable us to select cards. 
+	private void initImgBoundries() {
+		fields = new Rectangle[53];
+		
+		// fields for the 52 playing cards
+		int y = 30;
+		int i = 0;
+		int finalX = (109 - 30) * 51 + 30;
+		for (int x = 30; x <= finalX; x += Card.IMG_WIDTH + GAP_BETWEEN_CARDS) {
+			fields[i] = new Rectangle(x, y, Card.IMG_WIDTH, Card.IMG_HEIGHT);
+			i++;
+		}
+		
+		// one field for the reversed card
+		fields[52] = new Rectangle(60, 2 * y + Card.IMG_HEIGHT, 
+				Card.IMG_WIDTH, Card.IMG_HEIGHT); 
+	}
+	
+	private void initComponent() {
 		setPreferredSize(new Dimension(DEFAULT_WIDTH , DEFAULT_HEIGHT));
 		setBackground(new Color(13, 137, 13));
 		addMouseListener(new MouseHandler());
