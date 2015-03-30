@@ -34,6 +34,8 @@ public class Table extends JPanel {
 	// Locations where images will be drawn
 	private Rectangle[] fields;
 	
+	private boolean packPressed = false;
+	
 	public Table() {
 		pack = new Pack();
 		pile = new Pile();
@@ -52,6 +54,7 @@ public class Table extends JPanel {
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		Graphics2D g2 = (Graphics2D) g;
+		g2.setColor(Color.CYAN);
 		
 		// print the pile
 		int i = 0;
@@ -66,7 +69,11 @@ public class Table extends JPanel {
 		if (!pack.getCards().isEmpty()) {
 			int x = (int) fields[52].getX();
 			int y = (int) fields[52].getY();
-			g2.drawImage(pack.getImage(), null, x, y); 
+			g2.drawImage(pack.getImage(), null, x, y);
+			
+			if (packPressed) {
+				g2.drawRect(x - 1, y - 1, Card.IMG_WIDTH + 2, Card.IMG_HEIGHT + 4);
+			}
 		}
 	}
 	
@@ -100,10 +107,17 @@ public class Table extends JPanel {
 		
 		@Override
 		public void mousePressed(MouseEvent e) {
-			if (!pack.isEmpty()) {
+			if (fields[52].contains(e.getPoint()) && (!pack.isEmpty())) {
 				pile.addCard(pack.dealCard());
+				packPressed = true;
 				repaint();
 			}
+		}
+		
+		@Override
+		public void mouseReleased(MouseEvent e) {
+			packPressed = false;
+			repaint();
 		}
 	}
 }
