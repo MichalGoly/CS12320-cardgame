@@ -8,7 +8,6 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.List;
 
 import javax.swing.JPanel;
 
@@ -31,6 +30,7 @@ public class Table extends JPanel {
 	private final int DEFAULT_WIDTH = 
 			30 * 2 + Card.IMG_WIDTH * 52 + GAP_BETWEEN_CARDS * 51;
 	
+	private ScorePanel scorePanel;
 	private Pack pack;
 	private Pile pile;
 	// Locations where images will be drawn
@@ -39,7 +39,8 @@ public class Table extends JPanel {
 	// variables for decoration purposes (borders around selected cards)
 	private boolean packPressed = false;
 	
-	public Table() {
+	public Table(ScorePanel scorePanel) {
+		this.scorePanel = scorePanel;
 		pack = new Pack();
 		pile = new Pile();
 		initImgBoundries();
@@ -113,14 +114,16 @@ public class Table extends JPanel {
 	private class MouseHandler extends MouseAdapter {
 		
 		private int cardsSelected = 0;
-		private List<Card> cardsPair;
 		
 		@Override
 		public void mousePressed(MouseEvent e) {
+			// clear the 'invalid move' notification from the panel
+			scorePanel.setInvalidMove(false);
+			
+			// select a card if pressed
 			if (fields[52].contains(e.getPoint()) && (!pack.isEmpty())) {
 				pile.addCard(pack.dealCard());
 				packPressed = true;
-				// repaint();
 			}
 			checkCards(e.getPoint());
 			repaint();
@@ -135,6 +138,7 @@ public class Table extends JPanel {
 				if (pile.isMoveValid()) {
 					// valid
 				} else {
+					scorePanel.setInvalidMove(true);
 					for (Card c : pile.getCards()) {
 						c.setPressed(false);
 					}
