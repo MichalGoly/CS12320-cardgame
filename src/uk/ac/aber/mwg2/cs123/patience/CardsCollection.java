@@ -28,6 +28,13 @@ public abstract class CardsCollection {
 	}
 	
 	/**
+	 * @return True if this collection of cards is empty, false otherwise
+	 */
+	public boolean isEmpty() {
+		return cards.isEmpty();
+	}
+	
+	/**
 	 * Adds a card at the end of the collection.
 	 * @param card New card to be added
 	 */

@@ -72,8 +72,10 @@ public class Table extends JPanel {
 		
 		@Override
 		public void mousePressed(MouseEvent e) {
-			pile.addCard(pack.dealCard());
-			repaint();
+			if (!pack.isEmpty()) {
+				pile.addCard(pack.dealCard());
+				repaint();
+			}
 		}
 	}
 }
