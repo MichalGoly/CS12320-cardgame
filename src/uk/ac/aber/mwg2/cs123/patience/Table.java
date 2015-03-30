@@ -4,9 +4,11 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.List;
 
 import javax.swing.JPanel;
 
@@ -34,6 +36,7 @@ public class Table extends JPanel {
 	// Locations where images will be drawn
 	private Rectangle[] fields;
 	
+	// variables for decoration purposes (borders around selected cards)
 	private boolean packPressed = false;
 	
 	public Table() {
@@ -62,6 +65,10 @@ public class Table extends JPanel {
 			int x = (int) fields[i].getX();
 			int y = (int) fields[i].getY();
 			g2.drawImage(c.getImage(), null, x, y);
+			
+			if (c.isPressed()) {
+				g2.drawRect(x - 1, y - 1, Card.IMG_WIDTH + 2, Card.IMG_HEIGHT + 4);
+			}
 			i++;
 		}
 			
@@ -101,23 +108,61 @@ public class Table extends JPanel {
 		setBackground(new Color(13, 137, 13));
 		addMouseListener(new MouseHandler());
 	}
-	
+		
 	// Takes care of mouse events and allows the user to play the game
 	private class MouseHandler extends MouseAdapter {
+		
+		private int cardsSelected = 0;
+		private List<Card> cardsPair;
 		
 		@Override
 		public void mousePressed(MouseEvent e) {
 			if (fields[52].contains(e.getPoint()) && (!pack.isEmpty())) {
 				pile.addCard(pack.dealCard());
 				packPressed = true;
-				repaint();
+				// repaint();
 			}
+			checkCards(e.getPoint());
+			repaint();
 		}
 		
 		@Override
 		public void mouseReleased(MouseEvent e) {
 			packPressed = false;
+			
+			// if two cards are selected, make a move or unselect if its illegal
+			if (cardsSelected == 2 && (!pile.isEmpty())) {
+				if (pile.isMoveValid()) {
+					// valid
+				} else {
+					for (Card c : pile.getCards()) {
+						c.setPressed(false);
+					}
+					cardsSelected = 0;
+				}
+			}
 			repaint();
+		}
+		
+		// Checks if any of the 52 playing cards needs to be selected and selects 
+		// them if necessary 
+		private void checkCards(Point p) {
+			if (pile.isEmpty()) return;
+			
+			for (int i = 0; i < pile.getCards().size(); i++) {
+				if (fields[i].contains(p)) {
+					Card c = pile.getCards().get(i);
+					if (c.isPressed()) {
+						// unselect the card if it has been already pressed
+						c.setPressed(false);
+						cardsSelected--;
+					} else {
+						// select the card otherwise
+						c.setPressed(true);
+						cardsSelected++;
+					}
+				}
+			}
 		}
 	}
 }

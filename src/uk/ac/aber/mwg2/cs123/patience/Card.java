@@ -22,7 +22,8 @@ public class Card {
 	private Suit suit;
 	private Value value;
 	private BufferedImage img;
-
+	private boolean pressed;
+	
 	/**
 	 * Creates a playing card with a specified suit and value. Its image will be
 	 * loaded automatically.
@@ -33,7 +34,8 @@ public class Card {
 	public Card(Suit suit, Value value) {
 		this.suit = suit;
 		this.value = value;
-
+		pressed = false;
+		
 		try {
 			loadImage();
 		} catch (IOException e) {
@@ -48,10 +50,25 @@ public class Card {
 	}
 	
 	/**
+	 * Sets card's state to either pressed (true) or not pressed (false)
+	 * @param pressed true if pressed, false otherwise
+	 */
+	public void setPressed(boolean pressed) {
+		this.pressed = pressed;
+	}
+	
+	/**
 	 * @return The image of a card.
 	 */
 	public BufferedImage getImage() {
 		return img;
+	}
+	
+	/**
+	 * @return True if the card is pressed, false otherwise
+	 */
+	public boolean isPressed() {
+		return pressed;
 	}
 	
 	// Loads an appropriate card image depending on the suit and value
