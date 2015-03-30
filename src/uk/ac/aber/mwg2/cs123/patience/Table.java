@@ -22,8 +22,11 @@ import javax.swing.JPanel;
  */
 public class Table extends JPanel {
 	
+	private final int GAP_BETWEEN_CARDS = 6;
 	private final int DEFAULT_HEIGHT = 300;
-	private final int DEFAULT_WIDTH = 60 * 2 + 72 * 52 + 6 * 51;
+	// 60 is the additional space on both sides of the panel
+	private final int DEFAULT_WIDTH = 
+			60 * 2 + Card.IMG_WIDTH * 52 + GAP_BETWEEN_CARDS * 51;
 	
 	private Pack pack;
 	private Pile pile;
@@ -51,13 +54,13 @@ public class Table extends JPanel {
 		int y = 30;
 		for (Card c : pile.getCards()) {
 			g2.drawImage(c.getImage(), null, x, y);
-			x += c.getImage().getWidth() + 6;
+			x += Card.IMG_WIDTH + 6;
 		}
 			
 		// print an image of the reversed card, which represents the pack
 		if (!pack.getCards().isEmpty()) {
 			g2.drawImage(pack.getImage(), null, 60,
-					2 * y + pack.getImage().getHeight());
+					2 * y + Card.IMG_HEIGHT);
 		}
 	}
 	

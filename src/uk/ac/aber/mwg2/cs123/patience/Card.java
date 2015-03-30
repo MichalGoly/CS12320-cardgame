@@ -14,7 +14,11 @@ import javax.swing.JOptionPane;
  * @since 25 March 2015
  */
 public class Card {
-
+	
+	// public immutable references to width and height of a card images
+	public static final int IMG_WIDTH = 73;
+	public static final int IMG_HEIGHT = 93;
+	
 	private Suit suit;
 	private Value value;
 	private BufferedImage img;

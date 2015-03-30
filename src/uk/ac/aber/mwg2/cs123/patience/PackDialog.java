@@ -50,9 +50,9 @@ public class PackDialog extends JDialog {
 
 	private class DrawingArea extends JPanel {
 				
-		// (72+2) is the sum of the width of one card and two additional pixels
+		// sum of the width of one card and two additional pixels
 		// 52 is the amount of cards in the pack
-		private final int WIDTH = (72 + 2) * 52;
+		private final int WIDTH = (Card.IMG_WIDTH + 2) * 52;
 		private final int HEIGHT = 101;
 		
 		public DrawingArea() {			
@@ -71,7 +71,7 @@ public class PackDialog extends JDialog {
 			for (Card c : pack.getCards()) {
 				g2.drawImage(c.getImage(), null, x, y);
 				// Width of card and two pixels to make some space between cards
-				x += 72 + 2;
+				x += Card.IMG_WIDTH + 2;
 			}
 		}
 	}
