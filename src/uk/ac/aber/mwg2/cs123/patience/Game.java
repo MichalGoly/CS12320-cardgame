@@ -2,6 +2,8 @@ package uk.ac.aber.mwg2.cs123.patience;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
@@ -33,6 +35,7 @@ public class Game extends JFrame {
 		pack();
 		setTitle(WINDOW_TITLE);
 		setLocationRelativeTo(null);
+		addWindowListener(new WindowHandler());
 	}
 	
 	// Starts the game and chooses appropriate look and feel depending
@@ -54,9 +57,17 @@ public class Game extends JFrame {
 			@Override
 			public void run() {
 				JFrame frame = new Game();
-				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 				frame.setVisible(true);
 			}
 		});
+	}
+	
+	private class WindowHandler extends WindowAdapter {
+		
+		@Override
+		public void windowClosed(WindowEvent e) {
+			// display game over window
+			
+		}
 	}
 }

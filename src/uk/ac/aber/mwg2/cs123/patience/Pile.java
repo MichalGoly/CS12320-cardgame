@@ -66,7 +66,8 @@ public class Pile extends CardsCollection {
 		List<Card> cards = getCards();
 		cards.set(firstIndex, cards.remove(secondIndex));
 	}
-
+	
+	//TODO
 	private Pair<Integer> retrieveIndexes() throws NoOfCardsNotTwoException {
 		List<Integer> tempList = new ArrayList<Integer>(2); 
 		for (int i = 0; i < getCards().size(); i++) {
