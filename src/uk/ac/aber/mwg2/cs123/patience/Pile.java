@@ -54,8 +54,17 @@ public class Pile extends CardsCollection {
 		return result;
 	}
 	
-	public void makeMove() {
-		
+	/**
+	 * Makes a move in the game by updating contents of the collection of cards
+	 * on the table (Pile). Pressed card with the lower index will be replaced
+	 * with a card with the higher index.
+	 * 
+	 * NOTE that before making a move you should check if there is one by calling
+	 * {@link #isMoveValid()} first.
+	 */
+	public void makeMove() {		
+		List<Card> cards = getCards();
+		cards.set(firstIndex, cards.remove(secondIndex));
 	}
 
 	private Pair<Integer> retrieveIndexes() throws NoOfCardsNotTwoException {

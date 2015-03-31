@@ -137,6 +137,7 @@ public class Table extends JPanel {
 			if (cardsSelected == 2 && (!pile.isEmpty())) {
 				if (pile.isMoveValid()) {
 					pile.makeMove();
+					scorePanel.addPoints();
 				} else {
 					scorePanel.setInvalidMove(true);
 				}
