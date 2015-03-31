@@ -58,6 +58,20 @@ public class Card {
 	}
 	
 	/**
+	 * @return This playing card's suit
+	 */
+	public Suit getSuit() {
+		return suit;
+	}
+
+	/**
+	 * @return This playing card's value
+	 */
+	public Value getValue() {
+		return value;
+	}
+	
+	/**
 	 * @return The image of a card.
 	 */
 	public BufferedImage getImage() {

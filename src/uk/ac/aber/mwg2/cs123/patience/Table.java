@@ -136,14 +136,15 @@ public class Table extends JPanel {
 			// if two cards are selected, make a move or unselect if its illegal
 			if (cardsSelected == 2 && (!pile.isEmpty())) {
 				if (pile.isMoveValid()) {
-					// valid
+					pile.makeMove();
 				} else {
 					scorePanel.setInvalidMove(true);
-					for (Card c : pile.getCards()) {
-						c.setPressed(false);
-					}
-					cardsSelected = 0;
 				}
+				
+				for (Card c : pile.getCards()) {
+					c.setPressed(false);
+				}
+				cardsSelected = 0;
 			}
 			repaint();
 		}
