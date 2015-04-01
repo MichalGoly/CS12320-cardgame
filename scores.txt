@@ -1,4 +1,5 @@
-3
-30:Michal
+4
+470:Michal
 220:John
 100:Bob
+30:Michal

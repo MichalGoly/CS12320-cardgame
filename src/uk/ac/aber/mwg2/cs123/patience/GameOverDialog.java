@@ -9,7 +9,9 @@ import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -17,6 +19,7 @@ import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
@@ -42,7 +45,7 @@ public class GameOverDialog extends JDialog {
 	private JLabel score = new JLabel("0");
 	private JTextArea highScores = new JTextArea();
 	
-	private List<String> highScoreList;
+	private List<Score> highScoreList;
 	private final String SCORE_FILE = "scores.txt";
 	
 	/**
@@ -151,26 +154,60 @@ public class GameOverDialog extends JDialog {
 	 */
 	private void loadHighScores(JTextArea textArea) {
 		try (Scanner in = new Scanner(new File(SCORE_FILE))) {
-			highScoreList = new ArrayList<String>();
-			
+			highScoreList = new ArrayList<Score>();
 			int num = Integer.parseInt(in.nextLine());
 			for (int i = 0; i < num; i++) {
 				String record = in.nextLine();
-				highScoreList.add(record);
 				String[] tokens = record.split(":");
-				highScores.append(tokens[1] + " " + tokens[0] + "\n");
+				highScoreList.add(new Score(tokens[0], tokens[1]));
+				highScores.append(tokens[0] + " " + tokens[1] + "\n");
 			}
 		} catch (IOException e) {
 			highScores.append("No scores previously recorded");
 		}
 	}
 	
+	/*
+	 * Adds a new score into the 'scores.txt' file, preserving the descending
+	 * order of records. 
+	 */
 	private void saveScore(String name, String score) {
+		highScoreList.add(new Score(score, name));
+		Collections.sort(highScoreList);
 		
+		try (PrintWriter out = new PrintWriter(new File(SCORE_FILE))) {
+			out.println(highScoreList.size());
+			for (Score s : highScoreList) {
+				out.println(s.score + ":" + s.name);
+			}
+		} catch (IOException e) {
+			JOptionPane.showMessageDialog(this, "There was a problem with saving "
+					+ "your score to \"scores.txt\" file", "Error", 
+					JOptionPane.ERROR_MESSAGE);
+		}
 	}
 	
-	// test
-	public static void main(String... args) {
-		new GameOverDialog("320").setVisible(true);
+	/*
+	 * Simple class which represents a single score in the game. Due to its 
+	 * implementation it enables sorting mechanism to work.
+	 */
+	private class Score implements Comparable<Score> {
+		
+		private int score;
+		private String name;
+		
+		public Score(String score, String name) {
+			this.score = Integer.parseInt(score);
+			this.name = name;
+		}
+		
+		@Override
+		public int compareTo(Score other) {
+			if (this == other) return 0;
+			if (this.score == other.score) return 0;
+			if (this.score > other.score) return -1;
+			if (this.score < other.score) return 1;
+			return 0;
+		}
 	}
 }

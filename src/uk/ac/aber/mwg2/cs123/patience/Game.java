@@ -65,9 +65,9 @@ public class Game extends JFrame {
 	private class WindowHandler extends WindowAdapter {
 		
 		@Override
-		public void windowClosed(WindowEvent e) {
+		public void windowClosing(WindowEvent e) {
 			// display game over window
-			
+			new GameOverDialog(scorePanel.getCurrentScore()).setVisible(true);
 		}
 	}
 }

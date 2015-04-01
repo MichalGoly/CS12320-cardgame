@@ -66,6 +66,13 @@ public class ScorePanel extends JPanel {
 		repaint();
 	}
 	
+	/**
+	 * @return Player's current score
+	 */
+	public String getCurrentScore() {
+		return currentScore;
+	}
+	
 	@Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
