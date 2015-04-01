@@ -35,6 +35,7 @@ public class Table extends JPanel {
 	private Pile pile;
 	// Locations where images will be drawn
 	private Rectangle[] fields;
+	private int cardsSelected = 0;
 	
 	// variables for decoration purposes (borders around selected cards)
 	private boolean packPressed = false;
@@ -52,6 +53,21 @@ public class Table extends JPanel {
 	 */
 	public Pack getPack() {
 		return pack;
+	}
+	
+	/**
+	 * @return Current contents of the pile
+	 */
+	public Pile getPile() {
+		return pile;
+	}
+	
+	/**
+	 * Sets the amount of cards selected to the given value. 
+	 * @param cardsSelected Number of cards selected
+	 */
+	public void setCardsSelected(int cardsSelected) {
+		this.cardsSelected = cardsSelected;
 	}
 	
 	@Override
@@ -112,8 +128,6 @@ public class Table extends JPanel {
 		
 	// Takes care of mouse events and allows the user to play the game
 	private class MouseHandler extends MouseAdapter {
-		
-		private int cardsSelected = 0;
 		
 		@Override
 		public void mousePressed(MouseEvent e) {

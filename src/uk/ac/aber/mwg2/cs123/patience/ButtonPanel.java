@@ -12,11 +12,13 @@ import javax.swing.JPanel;
 public class ButtonPanel extends JPanel {
 	
 	private Table table;
+	private Bot bot;
 	
 	private final int DEFAULT_HEIGHT = 70;
 	
-	public ButtonPanel(Table table) {
+	public ButtonPanel(Table table, ScorePanel scorePanel) {
 		this.table = table;
+		bot = new Bot(table, scorePanel);
 		init();
 	}
 	
@@ -48,8 +50,11 @@ public class ButtonPanel extends JPanel {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				
+				if (bot.makeMove()) {
+					table.repaint();
+				} else {
+					System.out.println("Game over");
+				}
 			}
 		}));
 		automationPanel.add(new JButton(new AbstractAction("x Times") {
@@ -61,7 +66,5 @@ public class ButtonPanel extends JPanel {
 			}
 		}));
 		add(automationPanel);
-		
 	}
-	
 }
