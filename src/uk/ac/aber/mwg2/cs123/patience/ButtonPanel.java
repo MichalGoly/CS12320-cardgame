@@ -3,6 +3,7 @@ package uk.ac.aber.mwg2.cs123.patience;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
+import java.awt.event.WindowEvent;
 
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
@@ -11,12 +12,14 @@ import javax.swing.JPanel;
 
 public class ButtonPanel extends JPanel {
 	
+	private Game game;
 	private Table table;
 	private Bot bot;
 	
 	private final int DEFAULT_HEIGHT = 70;
 	
-	public ButtonPanel(Table table, ScorePanel scorePanel) {
+	public ButtonPanel(Game game, Table table, ScorePanel scorePanel) {
+		this.game = game;
 		this.table = table;
 		bot = new Bot(table, scorePanel);
 		init();
@@ -53,7 +56,7 @@ public class ButtonPanel extends JPanel {
 				if (bot.makeMove()) {
 					table.repaint();
 				} else {
-					System.out.println("Game over");
+					game.dispatchEvent(new WindowEvent(game, WindowEvent.WINDOW_CLOSING));
 				}
 			}
 		}));

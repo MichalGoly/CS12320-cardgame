@@ -27,7 +27,7 @@ public class Game extends JFrame {
 		add(scorePanel, BorderLayout.NORTH);
 		table = new Table(scorePanel);
 		add(new JScrollPane(table), BorderLayout.CENTER);
-		buttonPanel = new ButtonPanel(table, scorePanel);
+		buttonPanel = new ButtonPanel(this, table, scorePanel);
 		add(buttonPanel, BorderLayout.SOUTH);
 	}
 	
