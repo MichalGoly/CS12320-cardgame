@@ -34,55 +34,75 @@ public class Bot {
 		if (!pile.isEmpty()) {
 			List<Card> pileCards = pile.getCards();
 			
-			// ignore if there is only one card in the pile
+			// ignore if there is only one card in the pile, as move not possible
 			if (pileCards.size() != 1) {
-				// Go from right to left and check if any of the cards which are 
-				// next to each other can be joined (same suit or same value)
-				for (int i = pileCards.size() - 1; i > 0; i--) {
-					// firstly unselect every card in the pile
-					unselectEveryCard(pileCards);
-					
-					// then pick two cards and check if the move is valid
-					pileCards.get(i).setPressed(true);
-					pileCards.get(i - 1).setPressed(true);
-					if (pile.isMoveValid()) {
-						pile.makeMove();
-						scorePanel.addPoints();
-						// reset the amount of cards selected
-						table.setCardsSelected(0);
-						unselectEveryCard(pileCards);
-						return true;
-					}
+				if (tryNeighbouringCards(pileCards)) {
+					return true;
 				}
-				
 				// ignore if there is not enough cards to have two in the middle
 				if (pileCards.size() >= 4) {
-					// Go from right to left and check if any of the cards which have
-					// other two cards in the middle can be joined (same suit or value) 
-					for (int i = pileCards.size() - 1; i > 2; i--) {
-						// again unselect every card first
-						unselectEveryCard(pileCards);
-						
-						pileCards.get(i).setPressed(true);
-						pileCards.get(i - 3).setPressed(true);
-						if (pile.isMoveValid()) {
-							pile.makeMove();
-							scorePanel.addPoints();
-							// reset the amount of cards selected
-							table.setCardsSelected(0);
-							unselectEveryCard(pileCards);
-							return true;
-						}
+					if (tryCardsWithGap(pileCards)) {
+						return true;
 					}
 				}
 			}
 		}
-		
 		// if above failed try to deal a card
 		if (!pack.isEmpty()) {
 			unselectEveryCard(pile.getCards());
 			pile.addCard(pack.dealCard());
 			return true;
+		}
+		return false;
+	}
+	
+	/*
+	 * Go from right to left and check if any of the cards which are 
+	 * next to each other can be joined (same suit or same value)
+	 * 
+	 * @return true if the move was made, false otherwise
+	 */
+	private boolean tryNeighbouringCards(List<Card> pileCards) {
+		for (int i = pileCards.size() - 1; i > 0; i--) {
+			// firstly unselect every card in the pile
+			unselectEveryCard(pileCards);
+			
+			// then pick two cards and check if the move is valid
+			pileCards.get(i).setPressed(true);
+			pileCards.get(i - 1).setPressed(true);
+			if (pile.isMoveValid()) {
+				pile.makeMove();
+				scorePanel.addPoints();
+				// reset the amount of cards selected
+				table.setCardsSelected(0);
+				unselectEveryCard(pileCards);
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	/*
+	 * Go from right to left and check if any of the cards which have 
+	 * other two cards in the middle can be joined (same suit or value)
+	 * 
+	 * @return true if the move was made, false otherwise
+	 */
+	private boolean tryCardsWithGap(List<Card> pileCards) {
+		for (int i = pileCards.size() - 1; i > 2; i--) {
+			// again unselect every card first
+			unselectEveryCard(pileCards);
+			
+			pileCards.get(i).setPressed(true);
+			pileCards.get(i - 3).setPressed(true);
+			if (pile.isMoveValid()) {
+				pile.makeMove();
+				scorePanel.addPoints();
+				// reset the amount of cards selected
+				table.setCardsSelected(0);
+				unselectEveryCard(pileCards);
+				return true;
+			}
 		}
 		return false;
 	}
