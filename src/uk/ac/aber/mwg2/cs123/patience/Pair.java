@@ -6,7 +6,6 @@ package uk.ac.aber.mwg2.cs123.patience;
  * 
  * @author mwg
  * @since 31 March 2015
- * @param <T>
  */
 public class Pair<T> {
 	
