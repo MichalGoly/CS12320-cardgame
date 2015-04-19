@@ -8,6 +8,7 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.WindowEvent;
 
 import javax.swing.JPanel;
 
@@ -30,6 +31,7 @@ public class Table extends JPanel {
 	private final int DEFAULT_WIDTH = 
 			30 * 2 + Card.IMG_WIDTH * 52 + GAP_BETWEEN_CARDS * 51;
 	
+	private Game game;
 	private ScorePanel scorePanel;
 	private Pack pack;
 	private Pile pile;
@@ -40,7 +42,8 @@ public class Table extends JPanel {
 	// variables for decoration purposes (borders around selected cards)
 	private boolean packPressed = false;
 	
-	public Table(ScorePanel scorePanel) {
+	public Table(ScorePanel scorePanel, Game game) {
+		this.game = game;
 		this.scorePanel = scorePanel;
 		pack = new Pack();
 		pile = new Pile();
@@ -162,6 +165,12 @@ public class Table extends JPanel {
 				cardsSelected = 0;
 			}
 			repaint();
+			
+			// check if the player won and finish the game if he did
+			if (isGameWon()) {
+				game.dispatchEvent(
+						new WindowEvent(game, WindowEvent.WINDOW_CLOSING));
+			}
 		}
 		
 		// Checks if any of the 52 playing cards needs to be selected and selects 
@@ -183,6 +192,16 @@ public class Table extends JPanel {
 					}
 				}
 			}
+		}
+		
+		// Checks if the player won. There should be no cards left in the pack
+		// and pile size has to be equal 1
+		private boolean isGameWon() {
+			boolean isWon = false;
+			if (pile.getCards().size() == 1 && pack.isEmpty()) {
+				isWon = true;
+			} 
+			return isWon;
 		}
 	}
 }
