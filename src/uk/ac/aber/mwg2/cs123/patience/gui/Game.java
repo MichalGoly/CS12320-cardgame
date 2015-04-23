@@ -17,6 +17,9 @@ public class Game extends JFrame {
 	
 	private final String WINDOW_TITLE = "Patience Game";
 	
+	/**
+	 * Initializes the JFrame and its components
+	 */
 	public Game() {
 		initComponents();
 		initFrame();
@@ -62,6 +65,10 @@ public class Game extends JFrame {
 		});
 	}
 	
+	/*
+	 * Makes sure that the GameOverDialog is being displayed when the windowClosing
+	 * event is being dispatched.
+	 */
 	private class WindowHandler extends WindowAdapter {
 		
 		private GameOverDialog gameOverDialog;

@@ -35,8 +35,8 @@ public class ButtonPanel extends JPanel {
 		setPreferredSize(new Dimension(table.getWidth(), DEFAULT_HEIGHT));
 
 		JPanel gamePanel = new JPanel();
-		gamePanel.setBorder(BorderFactory.createTitledBorder("Game"));
-		gamePanel.add(new JButton(new AbstractAction("Display Pack") {
+		gamePanel.setBorder(BorderFactory.createTitledBorder("Pack"));
+		gamePanel.add(new JButton(new AbstractAction("Display") {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
