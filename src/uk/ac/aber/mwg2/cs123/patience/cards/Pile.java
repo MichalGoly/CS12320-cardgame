@@ -9,10 +9,10 @@ import uk.ac.aber.mwg2.cs123.patience.util.NoOfCardsNotTwoException;
 import uk.ac.aber.mwg2.cs123.patience.util.Pair;
 
 /**
- * This class represents a collection of cards placed on a table. It also acts
- * as a controller and notifies the view (Table) to update itself whenever user
- * selects two cards and wants to perform a move in the game. Most of the game
- * logic is implemented here. 
+ * This class represents a collection of cards placed on a table. It also has two
+ * very important methods {@link #isMoveValid()} and {@link #makeMove()}. First one 
+ * checks if the two selected cards correspont to any of the known moves in the game,
+ * while the second one actually makes the move. 
  * 
  * @author mwg2
  * @since 30 March 2015
@@ -70,7 +70,13 @@ public class Pile extends CardsCollection {
 		cards.set(firstIndex, cards.remove(secondIndex));
 	}
 	
-	//TODO
+	/*
+	 * Iterates through the Pile and finds the two indexes of pressed cards.
+	 * 
+	 * @return A pair of the two indexes of pressed cards
+	 * @throws NoOfCardsNotTwoException if for some reason the number of pressed
+	 * 			cards in the Pile is != 2
+	 */
 	private Pair<Integer> retrieveIndexes() throws NoOfCardsNotTwoException {
 		List<Integer> tempList = new ArrayList<Integer>(2); 
 		for (int i = 0; i < getCards().size(); i++) {

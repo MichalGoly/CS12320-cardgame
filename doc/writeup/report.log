@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.2.21)  23 APR 2015 14:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.2.21)  25 APR 2015 15:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -165,7 +165,7 @@ File: /home/michal/development/workspace/CS12320_assign2/doc/img/useDiagram.png
 
 <use /home/michal/development/workspace/CS12320_assign2/doc/img/useDiagram.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/useDiagram.png used on input line 60.
+/img/useDiagram.png used on input line 61.
 (pdftex.def)             Requested size: 448.07378pt x 540.78705pt.
 
 </home/michal/development/workspace/CS12320_assign2/doc/img/classDiagram.png, i
@@ -176,32 +176,32 @@ ng Graphic file (type png)
 <use /home/michal/development/workspace/CS12320_assign2/doc/img/classDiagram.pn
 g>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/classDiagram.png used on input line 63.
+/img/classDiagram.png used on input line 65.
 (pdftex.def)             Requested size: 448.07378pt x 663.76892pt.
  [3 </home/michal/development/workspace/CS12320_assign2/doc/img/useDiagram.png 
 (PNG copy)>]
-Overfull \vbox (56.03604pt too high) has occurred while \output is active []
+Overfull \vbox (81.22604pt too high) has occurred while \output is active []
 
 
 [4 </home/michal/development/workspace/CS12320_assign2/doc/img/classDiagram.png
- (PNG copy)>] [5] (./report.aux) ) 
+>] [5] [6] [7] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 1519 strings out of 495021
- 22238 string characters out of 6181344
- 75293 words of memory out of 5000000
- 4735 multiletter control sequences out of 15000+600000
- 8808 words of font info for 31 fonts, out of 8000000 for 9000
+ 1521 strings out of 495021
+ 22259 string characters out of 6181344
+ 77293 words of memory out of 5000000
+ 4736 multiletter control sequences out of 15000+600000
+ 8977 words of font info for 32 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,6n,23p,296b,179s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb>
-Output written on report.pdf (6 pages, 276136 bytes).
+ 37i,6n,23p,296b,184s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on report.pdf (8 pages, 279476 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

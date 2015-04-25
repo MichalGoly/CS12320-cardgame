@@ -9,6 +9,14 @@ import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.UIManager;
 
+/**
+ * Game class is the starting point of the application. It initializes
+ * other components and puts them into the correct positions using 
+ * BorderLayout.
+ * 
+ * @author mwg2
+ * @since 26 March 2015
+ */
 public class Game extends JFrame {
 	
 	private ScorePanel scorePanel;

@@ -2,6 +2,9 @@
 \contentsline {subsection}{\numberline {1.1}Project description}{2}
 \contentsline {subsection}{\numberline {1.2}Game controls}{2}
 \contentsline {section}{\numberline {2}Requirements Analysis}{3}
+\contentsline {subsection}{\numberline {2.1}UML Use Case diagram}{3}
 \contentsline {section}{\numberline {3}Design}{4}
-\contentsline {section}{\numberline {4}Testing}{5}
-\contentsline {section}{\numberline {5}Evaluation}{5}
+\contentsline {subsection}{\numberline {3.1}UML Class diagram}{4}
+\contentsline {subsection}{\numberline {3.2}Description and relationships of each Class}{5}
+\contentsline {section}{\numberline {4}Testing}{7}
+\contentsline {section}{\numberline {5}Evaluation}{7}
