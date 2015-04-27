@@ -1,7 +1,9 @@
-7
+9
 470:Michal
 470:wojt
+400:Richard
 220:John
+120:Kevin
 100:Bob
 60:James Jones
 60:Adam

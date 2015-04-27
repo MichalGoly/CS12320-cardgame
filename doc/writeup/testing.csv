@@ -1,0 +1,112 @@
+ID,Requirement,Description,Inputs,"Expected 
+Outputs",Pass / Fail,Comments
+A1.1,FR1,"Load the proper
+look and feel
+depending on
+The OS","Start game on
+Ubuntu GNOME","SS1 screenshot
+displayed",P,
+,,,"Start game on
+MS Windows","SS2 screenshot
+displayed",P,
+,,,"Start game on
+Mac OS","SS3 screenshot
+displayed",P,
+A1.2,FR2,"Show current 
+Contents of
+The pack","Click “Display”
+button when pack
+Is not empty","SS4 screenshot
+displayed",P,
+,,,"Click “Display”
+button when pack
+Is empty","SS5 screenshot
+displayed",P,
+A1.3,FR3,Shuffle the pack,"Click “Shuffle”
+button once","SS6 screenshot
+displayed",P,
+,,,"Click “Shuffle”
+button twice","SS7 screenshot
+displayed",P,
+A1.4,FR4,Deal a card,"Click on the
+deck","SS8 screenshot
+displayed",P,
+A1.5,FR5,"Select cards
+on the table","Click on an 
+unselected
+card","SS9 screenshot
+displayed",P,
+,,,"Click on a 
+selected card","SS10 screenshot
+displayed",P,
+A1.6,FR6,Make a move,"Select two cards
+next to each
+Other
+see (SS11)","SS12 screenshot
+displayed",P,
+,,,"Select two cards
+with a gap 2 card
+Gap in between
+see (SS13)","SS14 screenshot
+displayed",P,
+,,,"Make an invalid
+Move
+See (SS15)","SS16 screenshot
+displayed",P,
+B1.1,FR7,Play for me once,"Click “Once”
+button when 
+cards on the
+table can
+Be joined
+see (SS17)","SS18 screenshot
+displayed",P,
+,,,"Click “Once”
+button when 
+cards on the table
+Cannot be joined
+see (SS19)","SS20 screenshot
+displayed",P,
+,,,"Click “Once”
+button when there 
+are no more 
+moves in the
+game","SS21 screenshot
+displayed",P,
+B1.2,FR8,"Play for me 
+a specified
+number of times","Click “X times”
+button, enter 20
+and press “Ok” 
+(see SS22)","SS23 screenshot
+displayed",P,
+,,,"Click “X times”
+button, enter -10
+and press “Ok” ","SS24 screenshot
+displayed",P,
+,,,"Click “X times”
+button, enter “abc”
+and press “Ok” ","SS24 screenshot
+displayed",P,
+B1.3,FR9,Quitting the game,"Press 'x' exit
+button on the
+top of the
+window","SS21 screenshot
+ displayed",P,
+,,,"Win the game
+See (SS25)","SS21 screenshot 
+displayed",P,
+B1.4,FR10,"Saving the score
+see (SS21)","Leave the name 
+field blank 
+and press 
+“save & exit”
+button","Program closes 
+and player's score
+is not 
+remembered",P,
+,,,"Enter name
+“Kevin” and exit.
+Then relaunch the
+game and quit 
+immediately","SS26 screenshot
+displayed",P,
