@@ -15,6 +15,12 @@ import javax.swing.JPanel;
 
 import uk.ac.aber.mwg2.cs123.patience.automation.Bot;
 
+/**
+ * 
+ * 
+ * @author mwg2
+ * @since 1 April 2015
+ */
 public class ButtonPanel extends JPanel {
 
 	private Game game;
@@ -22,7 +28,13 @@ public class ButtonPanel extends JPanel {
 	private Bot bot;
 
 	private final int DEFAULT_HEIGHT = 70;
-
+	
+	/**
+	 * TODO
+	 * @param game
+	 * @param table
+	 * @param scorePanel
+	 */
 	public ButtonPanel(Game game, Table table, ScorePanel scorePanel) {
 		this.game = game;
 		this.table = table;

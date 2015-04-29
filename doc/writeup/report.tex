@@ -101,7 +101,7 @@ the name field blank.
 		the panel, while \texttt{Pack} on the bottom. \texttt{Table} object acts the 
 		view, whereas its inner class \texttt{MouseHandler} as the controller. 
 		It will update itself whenever it is notified about the change of
-		either the \texttt{Pack} or the \texttt{Pile} contents. Similarly, a blue border
+		either the \texttt{Pack} or the \texttt{Pile} contents. Furthermore, a blue border
 		will be painted around each selected card in the game.
 		
 	\item \texttt{MouseHandler} extends the \texttt{MouseAdapter} class and reacts to
@@ -150,7 +150,8 @@ the name field blank.
 		objects of the same class. Allows to easily pass around two objects together.
 
 	\item \texttt{Card} class represents a single playing card. Each card has its value, 
-		suit and an image.
+		suit and an image. An appropriate picture is loaded depending on the suit and
+		the value of the card. 
 	
 	\item \texttt{Suit} enum represents a suit of a card. Each suit has its corresponding
 		single character String representation, accessible with the \texttt{toString} 
@@ -232,5 +233,73 @@ the name field blank.
 		\includegraphics[width=0.6\textwidth]{ss26}		
 \end{enumerate}
 \section{Evaluation}
-ddadsad
+I began by reading the requirements specification and trying to understand the rules
+of the game. Unlike in the previous mini-assignments, we did not receive an initial 
+implementiation of the program. Therefore I realised that I should not rush into 
+writing the code, before creating a simple design of the system. At this point I knew,
+that I am going to need to represent playing cards, their suits and values, pack and 
+some sort of collection of cards the player could select. 
+
+\subsection{Completely graphical user interface}
+I have been asked to create a console application which could also take the advantage of 
+the GUI framework provided. Player could then type in commands from the menu and 
+make moves in the game. The GUI frame would be used to graphically display his progress. 
+
+In order to make the assignment more challenging and fun, I have decided to make the 
+application completely graphical. User could then click on cards and buttons rather than
+typing commands into console. This approach however, eliminated the point of the two 
+requirements in the specification of the assignment. Without the console, "control text
+display" option could not be implemented, nor could be printing of the output into a 
+text file. Furthermore, the "display pack" option could not just print deck's contents.
+Instead it displays a modal dialog box which graphically presents cards in the pack.
+
+\subsection{Initial implementation}
+\texttt{Card} was the first class I wrote and straight away I knew that apart from 
+keeping the track of its suit and value, it would also need to know whether it has been
+pressed or not. A boolean instance variable was a sufficient solution to that problem. 
+Subsequently, I moved on to create a \texttt{Pack} which would initialy store 52 ordered
+playing cards. \texttt{Pile} class represents the cards which were delt from the pack
+on to the table. Because it has similar basic behaviour as the \texttt{Pack}, I have
+decided to use inheritance and abstract this functionality into a parent class called
+\texttt{CardsCollection}. 
+
+\subsection{Towards the working application}
+I knew that the GUI framework provided, would not be sufficient to make the game 
+completely "terminal free". Instead I started from scratch, keeping in mind the MVC 
+design objectives I have read about in the past. I wanted to keep the data, view and 
+controller seperate and began to implement the GUI. 
+
+User interface (view) consists of the three main components:
+\begin{itemize}
+	\item \texttt{ScorePanel} which displays current score, highest score ever recorded
+		and an "invalid move" warning when an illigal move has been detected
+	
+	\item \texttt{Table} which is a "drawing area" on which cards are being drawn
+	
+	\item \texttt{ButtonPanel} which provides the player with additional functions like
+		"shuffle the pack". 
+\end{itemize}
+
+Most of the game logic (controller) has been implemented in these classes:
+\begin{itemize}
+	\item \texttt{MouseHandler} is an inner private class inside the \texttt{Table}, 
+		which listens to mouse events and enables the player to play the game by 
+		clicking on cards. 
+	
+	\item \texttt{Pile} which also acts a model, makes sure that when two cards are 
+		selected it checks whether there is a valid move available. It also can actually
+		perform the move by joining selected cards.
+	
+	\item \texttt{Bot} where the game automation code is located. 
+\end{itemize}
+
+\subsection{Summary}
+This assignment was definitely more difficult and complex than the previous two 
+mini-assignments. However starting from scratch, enabled me to go through almost
+every software development life cycle, apart from the "maintanence" one. I enjoyed coding
+itself the most, but the testing experiece will probably help greatly next year and in
+the future career. Because I have fulfilled all the assignment requirements and created 
+a more complex, fully graphical game I would be happy to receive a mark of 90\% for 
+this assignment.
+
 \end{document}

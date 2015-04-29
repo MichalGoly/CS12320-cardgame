@@ -17,6 +17,15 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
+/**
+ * ScorePanel is a JPanel located on the top area of the Game JFrame. 
+ * Its purpose is to display player's current score, the highest score
+ * ever recorder in the past and an invalid move notification (whenever
+ * user makes a move not permitted in the game). 
+ * 
+ * @since 1 April 2015
+ * @author mwg2
+ */
 public class ScorePanel extends JPanel {
 
 	private String currentScore;
@@ -31,7 +40,12 @@ public class ScorePanel extends JPanel {
 	
 	private final int DEFAULT_WIDTH;
 	private final int DEFAULT_HEIGHT = 30;
-
+	
+	/**
+	 * Constructs the ScorePanel object which paints player's current score, 
+	 * highest score ever recorded in the past and occasionally a warning
+	 * message when an invalid move is made. 
+	 */
 	public ScorePanel() {
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		DEFAULT_WIDTH = screenSize.width / 2;
