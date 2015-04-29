@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.2.21)  28 APR 2015 16:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.2.21)  29 APR 2015 15:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -185,206 +185,60 @@ Overfull \vbox (81.22604pt too high) has occurred while \output is active []
 
 [4 </home/michal/development/workspace/CS12320_assign2/doc/img/classDiagram.png
 >] [5]
-</home/michal/development/workspace/CS12320_assign2/doc/img/tableA.png, id=28, 
+Overfull \hbox (8.5258pt too wide) in paragraph at lines 133--134
+\OT1/cmtt/m/n/12 If two cards are selected, make a move or unselect if its ille
+gal 
+ []
+
+[6]
+</home/michal/development/workspace/CS12320_assign2/doc/img/sequence.png, id=32
+, 893.3375pt x 983.675pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/sequence.png G
+raphic file (type png)
+
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/sequence.png>
+Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
+/img/sequence.png used on input line 188.
+(pdftex.def)             Requested size: 448.07378pt x 493.3823pt.
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 188--189
+[][] 
+ []
+
+
+</home/michal/development/workspace/CS12320_assign2/doc/img/tableA.png, id=33, 
 1336.995pt x 1427.3325pt>
 File: /home/michal/development/workspace/CS12320_assign2/doc/img/tableA.png Gra
 phic file (type png)
 
 <use /home/michal/development/workspace/CS12320_assign2/doc/img/tableA.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/tableA.png used on input line 176.
+/img/tableA.png used on input line 194.
 (pdftex.def)             Requested size: 448.07378pt x 478.33904pt.
 
-</home/michal/development/workspace/CS12320_assign2/doc/img/tableB.png, id=30, 
+</home/michal/development/workspace/CS12320_assign2/doc/img/tableB.png, id=35, 
 1345.025pt x 1608.0075pt>
 File: /home/michal/development/workspace/CS12320_assign2/doc/img/tableB.png Gra
 phic file (type png)
 
 <use /home/michal/development/workspace/CS12320_assign2/doc/img/tableB.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/tableB.png used on input line 177.
+/img/tableB.png used on input line 195.
 (pdftex.def)             Requested size: 448.07378pt x 535.67404pt.
 
-[6] [7 </home/michal/development/workspace/CS12320_assign2/doc/img/tableA.png>]
-[8 </home/michal/development/workspace/CS12320_assign2/doc/img/tableB.png>]
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss1.png, id=43, 989
+[7 </home/michal/development/workspace/CS12320_assign2/doc/img/sequence.png (PN
+G copy)>] [8 </home/michal/development/workspace/CS12320_assign2/doc/img/tableA
+.png>] [9 </home/michal/development/workspace/CS12320_assign2/doc/img/tableB.pn
+g>]
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss1.png, id=47, 989
 .6975pt x 440.64626pt>
 File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss1.png Graphi
 c file (type png)
 
 <use /home/michal/development/workspace/CS12320_assign2/doc/img/ss1.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss1.png used on input line 183.
+/img/ss1.png used on input line 201.
 (pdftex.def)             Requested size: 448.07378pt x 199.49252pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 182--184
-
- []
-
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 182--184
-[] 
- []
-
-
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss2.png, id=44, 769
-.37437pt x 331.2375pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss2.png Graphi
-c file (type png)
-
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss2.png>
-Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss2.png used on input line 185.
-(pdftex.def)             Requested size: 448.07378pt x 192.91139pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 184--186
-
- []
-
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 184--186
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
-
- []
-
-
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss4.png, id=45, 803
-.0pt x 195.73125pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss4.png Graphi
-c file (type png)
-
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss4.png>
-Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss4.png used on input line 189.
-(pdftex.def)             Requested size: 448.07378pt x 109.22047pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--190
-
- []
-
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 188--190
-[] 
- []
-
-[9 </home/michal/development/workspace/CS12320_assign2/doc/img/ss1.png> </home/
-michal/development/workspace/CS12320_assign2/doc/img/ss2.png>]
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss5.png, id=50, 803
-.0pt x 195.73125pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss5.png Graphi
-c file (type png)
-
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss5.png>
-Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss5.png used on input line 191.
-(pdftex.def)             Requested size: 448.07378pt x 109.22047pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
-
- []
-
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 190--192
-[] 
- []
-
-
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss6.png, id=51, 803
-.0pt x 195.73125pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss6.png Graphi
-c file (type png)
-
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss6.png>
-Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss6.png used on input line 193.
-(pdftex.def)             Requested size: 448.07378pt x 109.22047pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 192--194
-
- []
-
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 192--194
-[] 
- []
-
-
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss7.png, id=52, 318
-.18875pt x 144.54pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss7.png Graphi
-c file (type png)
-
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss7.png>
-Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss7.png used on input line 195.
-(pdftex.def)             Requested size: 179.22676pt x 81.4138pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--196
-
- []
-
-
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss8.png, id=53, 924
-.45375pt x 440.64626pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss8.png Graphi
-c file (type png)
-
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss8.png>
-Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss8.png used on input line 197.
-(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--198
-
- []
-
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 196--198
-[] 
- []
-
-[10 </home/michal/development/workspace/CS12320_assign2/doc/img/ss4.png> </home
-/michal/development/workspace/CS12320_assign2/doc/img/ss5.png> </home/michal/de
-velopment/workspace/CS12320_assign2/doc/img/ss6.png> </home/michal/development/
-workspace/CS12320_assign2/doc/img/ss7.png>]
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss9.png, id=61, 924
-.45375pt x 440.64626pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss9.png Graphi
-c file (type png)
-
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss9.png>
-Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss9.png used on input line 199.
-(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--200
-
- []
-
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 198--200
-[] 
- []
-
-
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss10.png, id=62, 92
-4.45375pt x 440.64626pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss10.png Graph
-ic file (type png)
-
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss10.png>
-Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss10.png used on input line 201.
-(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 200--202
 
@@ -395,17 +249,16 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 200--202
 [] 
  []
 
-[11 </home/michal/development/workspace/CS12320_assign2/doc/img/ss8.png> </home
-/michal/development/workspace/CS12320_assign2/doc/img/ss9.png>]
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss11.png, id=68, 92
-4.45375pt x 440.64626pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss11.png Graph
-ic file (type png)
 
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss11.png>
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss2.png, id=48, 769
+.37437pt x 331.2375pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss2.png Graphi
+c file (type png)
+
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss2.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss11.png used on input line 203.
-(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
+/img/ss2.png used on input line 203.
+(pdftex.def)             Requested size: 448.07378pt x 192.91139pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 202--204
 
@@ -417,36 +270,25 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 202--204
  []
 
 
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss12.png, id=69, 92
-4.45375pt x 440.64626pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss12.png Graph
-ic file (type png)
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
 
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss12.png>
-Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss12.png used on input line 205.
-(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 204--206
 
  []
 
 
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 204--206
-[] 
- []
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss4.png, id=49, 803
+.0pt x 195.73125pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss4.png Graphi
+c file (type png)
 
-[12 </home/michal/development/workspace/CS12320_assign2/doc/img/ss10.png> </hom
-e/michal/development/workspace/CS12320_assign2/doc/img/ss11.png>]
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss13.png, id=76, 92
-4.45375pt x 440.64626pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss13.png Graph
-ic file (type png)
-
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss13.png>
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss4.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss13.png used on input line 207.
-(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
+/img/ss4.png used on input line 207.
+(pdftex.def)             Requested size: 448.07378pt x 109.22047pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 206--208
 
@@ -457,16 +299,17 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 206--208
 [] 
  []
 
+[10 </home/michal/development/workspace/CS12320_assign2/doc/img/ss1.png> </home
+/michal/development/workspace/CS12320_assign2/doc/img/ss2.png>]
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss5.png, id=54, 803
+.0pt x 195.73125pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss5.png Graphi
+c file (type png)
 
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss14.png, id=77, 92
-4.45375pt x 440.64626pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss14.png Graph
-ic file (type png)
-
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss14.png>
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss5.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss14.png used on input line 209.
-(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
+/img/ss5.png used on input line 209.
+(pdftex.def)             Requested size: 448.07378pt x 109.22047pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 208--210
 
@@ -477,17 +320,16 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 208--210
 [] 
  []
 
-[13 </home/michal/development/workspace/CS12320_assign2/doc/img/ss12.png> </hom
-e/michal/development/workspace/CS12320_assign2/doc/img/ss13.png>]
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss15.png, id=83, 92
-4.45375pt x 440.64626pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss15.png Graph
-ic file (type png)
 
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss15.png>
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss6.png, id=55, 803
+.0pt x 195.73125pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss6.png Graphi
+c file (type png)
+
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss6.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss15.png used on input line 211.
-(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
+/img/ss6.png used on input line 211.
+(pdftex.def)             Requested size: 448.07378pt x 109.22047pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 210--212
 
@@ -499,35 +341,29 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 210--212
  []
 
 
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss16.png, id=84, 92
-4.45375pt x 440.64626pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss16.png Graph
-ic file (type png)
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss7.png, id=56, 318
+.18875pt x 144.54pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss7.png Graphi
+c file (type png)
 
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss16.png>
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss7.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss16.png used on input line 213.
-(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
+/img/ss7.png used on input line 213.
+(pdftex.def)             Requested size: 179.22676pt x 81.4138pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 212--214
 
  []
 
 
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 212--214
-[] 
- []
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss8.png, id=57, 924
+.45375pt x 440.64626pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss8.png Graphi
+c file (type png)
 
-[14 </home/michal/development/workspace/CS12320_assign2/doc/img/ss14.png> </hom
-e/michal/development/workspace/CS12320_assign2/doc/img/ss15.png>]
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss17.png, id=90, 92
-4.45375pt x 440.64626pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss17.png Graph
-ic file (type png)
-
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss17.png>
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss8.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss17.png used on input line 215.
+/img/ss8.png used on input line 215.
 (pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 214--216
@@ -539,15 +375,18 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 214--216
 [] 
  []
 
+[11 </home/michal/development/workspace/CS12320_assign2/doc/img/ss4.png> </home
+/michal/development/workspace/CS12320_assign2/doc/img/ss5.png> </home/michal/de
+velopment/workspace/CS12320_assign2/doc/img/ss6.png> </home/michal/development/
+workspace/CS12320_assign2/doc/img/ss7.png>]
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss9.png, id=65, 924
+.45375pt x 440.64626pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss9.png Graphi
+c file (type png)
 
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss18.png, id=91, 92
-4.45375pt x 440.64626pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss18.png Graph
-ic file (type png)
-
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss18.png>
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss9.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss18.png used on input line 217.
+/img/ss9.png used on input line 217.
 (pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 216--218
@@ -559,16 +398,15 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 216--218
 [] 
  []
 
-[15 </home/michal/development/workspace/CS12320_assign2/doc/img/ss16.png> </hom
-e/michal/development/workspace/CS12320_assign2/doc/img/ss17.png>]
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss19.png, id=97, 92
+
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss10.png, id=66, 92
 4.45375pt x 440.64626pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss19.png Graph
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss10.png Graph
 ic file (type png)
 
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss19.png>
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss10.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss19.png used on input line 219.
+/img/ss10.png used on input line 219.
 (pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 218--220
@@ -580,15 +418,16 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 218--220
 [] 
  []
 
-
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss20.png, id=98, 92
+[12 </home/michal/development/workspace/CS12320_assign2/doc/img/ss8.png> </home
+/michal/development/workspace/CS12320_assign2/doc/img/ss9.png>]
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss11.png, id=73, 92
 4.45375pt x 440.64626pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss20.png Graph
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss11.png Graph
 ic file (type png)
 
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss20.png>
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss11.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss20.png used on input line 221.
+/img/ss11.png used on input line 221.
 (pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 220--222
@@ -600,32 +439,37 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 220--222
 [] 
  []
 
-[16 </home/michal/development/workspace/CS12320_assign2/doc/img/ss18.png> </hom
-e/michal/development/workspace/CS12320_assign2/doc/img/ss19.png>]
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss21.png, id=104, 4
-03.5075pt x 278.03876pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss21.png Graph
+
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss12.png, id=74, 92
+4.45375pt x 440.64626pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss12.png Graph
 ic file (type png)
 
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss21.png>
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss12.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss21.png used on input line 223.
-(pdftex.def)             Requested size: 268.847pt x 185.24982pt.
+/img/ss12.png used on input line 223.
+(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 222--224
 
  []
 
 
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss22.png, id=105, 9
-03.375pt x 499.8675pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss22.png Graph
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 222--224
+[] 
+ []
+
+[13 </home/michal/development/workspace/CS12320_assign2/doc/img/ss10.png> </hom
+e/michal/development/workspace/CS12320_assign2/doc/img/ss11.png>]
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss13.png, id=80, 92
+4.45375pt x 440.64626pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss13.png Graph
 ic file (type png)
 
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss22.png>
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss13.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss22.png used on input line 225.
-(pdftex.def)             Requested size: 448.07378pt x 247.93477pt.
+/img/ss13.png used on input line 225.
+(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 224--226
 
@@ -636,17 +480,16 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 224--226
 [] 
  []
 
-[17 </home/michal/development/workspace/CS12320_assign2/doc/img/ss20.png> </hom
-e/michal/development/workspace/CS12320_assign2/doc/img/ss21.png>]
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss23.png, id=111, 9
-00.36375pt x 440.64626pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss23.png Graph
+
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss14.png, id=81, 92
+4.45375pt x 440.64626pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss14.png Graph
 ic file (type png)
 
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss23.png>
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss14.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss23.png used on input line 227.
-(pdftex.def)             Requested size: 448.07378pt x 219.29385pt.
+/img/ss14.png used on input line 227.
+(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 226--228
 
@@ -657,32 +500,37 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 226--228
 [] 
  []
 
-
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss24.png, id=112, 2
-90.08376pt x 152.57pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss24.png Graph
+[14 </home/michal/development/workspace/CS12320_assign2/doc/img/ss12.png> </hom
+e/michal/development/workspace/CS12320_assign2/doc/img/ss13.png>]
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss15.png, id=87, 92
+4.45375pt x 440.64626pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss15.png Graph
 ic file (type png)
 
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss24.png>
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss15.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss24.png used on input line 229.
-(pdftex.def)             Requested size: 179.22676pt x 94.26416pt.
+/img/ss15.png used on input line 229.
+(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
-[18 </home/michal/development/workspace/CS12320_assign2/doc/img/ss22.png> </hom
-e/michal/development/workspace/CS12320_assign2/doc/img/ss23.png>]
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss25.png, id=119, 8
-19.06pt x 440.64626pt>
-File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss25.png Graph
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 228--230
+[] 
+ []
+
+
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss16.png, id=88, 92
+4.45375pt x 440.64626pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss16.png Graph
 ic file (type png)
 
-<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss25.png>
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss16.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss25.png used on input line 231.
-(pdftex.def)             Requested size: 448.07378pt x 241.06523pt.
+/img/ss16.png used on input line 231.
+(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 230--232
 
@@ -693,42 +541,217 @@ Overfull \hbox (29.3747pt too wide) in paragraph at lines 230--232
 [] 
  []
 
+[15 </home/michal/development/workspace/CS12320_assign2/doc/img/ss14.png> </hom
+e/michal/development/workspace/CS12320_assign2/doc/img/ss15.png>]
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss17.png, id=94, 92
+4.45375pt x 440.64626pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss17.png Graph
+ic file (type png)
 
-</home/michal/development/workspace/CS12320_assign2/doc/img/ss26.png, id=120, 4
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss17.png>
+Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
+/img/ss17.png used on input line 233.
+(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--234
+
+ []
+
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 232--234
+[] 
+ []
+
+
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss18.png, id=95, 92
+4.45375pt x 440.64626pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss18.png Graph
+ic file (type png)
+
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss18.png>
+Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
+/img/ss18.png used on input line 235.
+(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--236
+
+ []
+
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 234--236
+[] 
+ []
+
+[16 </home/michal/development/workspace/CS12320_assign2/doc/img/ss16.png> </hom
+e/michal/development/workspace/CS12320_assign2/doc/img/ss17.png>]
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss19.png, id=101, 9
+24.45375pt x 440.64626pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss19.png Graph
+ic file (type png)
+
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss19.png>
+Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
+/img/ss19.png used on input line 237.
+(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--238
+
+ []
+
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 236--238
+[] 
+ []
+
+
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss20.png, id=102, 9
+24.45375pt x 440.64626pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss20.png Graph
+ic file (type png)
+
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss20.png>
+Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
+/img/ss20.png used on input line 239.
+(pdftex.def)             Requested size: 448.07378pt x 213.57869pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
+
+ []
+
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 238--240
+[] 
+ []
+
+[17 </home/michal/development/workspace/CS12320_assign2/doc/img/ss18.png> </hom
+e/michal/development/workspace/CS12320_assign2/doc/img/ss19.png>]
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss21.png, id=108, 4
+03.5075pt x 278.03876pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss21.png Graph
+ic file (type png)
+
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss21.png>
+Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
+/img/ss21.png used on input line 241.
+(pdftex.def)             Requested size: 268.847pt x 185.24982pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--242
+
+ []
+
+
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss22.png, id=109, 9
+03.375pt x 499.8675pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss22.png Graph
+ic file (type png)
+
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss22.png>
+Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
+/img/ss22.png used on input line 243.
+(pdftex.def)             Requested size: 448.07378pt x 247.93477pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--244
+
+ []
+
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 242--244
+[] 
+ []
+
+[18 </home/michal/development/workspace/CS12320_assign2/doc/img/ss20.png> </hom
+e/michal/development/workspace/CS12320_assign2/doc/img/ss21.png>]
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss23.png, id=116, 9
+00.36375pt x 440.64626pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss23.png Graph
+ic file (type png)
+
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss23.png>
+Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
+/img/ss23.png used on input line 245.
+(pdftex.def)             Requested size: 448.07378pt x 219.29385pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--246
+
+ []
+
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 244--246
+[] 
+ []
+
+
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss24.png, id=117, 2
+90.08376pt x 152.57pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss24.png Graph
+ic file (type png)
+
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss24.png>
+Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
+/img/ss24.png used on input line 247.
+(pdftex.def)             Requested size: 179.22676pt x 94.26416pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--248
+
+ []
+
+[19 </home/michal/development/workspace/CS12320_assign2/doc/img/ss22.png> </hom
+e/michal/development/workspace/CS12320_assign2/doc/img/ss23.png>]
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss25.png, id=123, 8
+19.06pt x 440.64626pt>
+File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss25.png Graph
+ic file (type png)
+
+<use /home/michal/development/workspace/CS12320_assign2/doc/img/ss25.png>
+Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
+/img/ss25.png used on input line 249.
+(pdftex.def)             Requested size: 448.07378pt x 241.06523pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--250
+
+ []
+
+
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 248--250
+[] 
+ []
+
+
+</home/michal/development/workspace/CS12320_assign2/doc/img/ss26.png, id=124, 4
 03.5075pt x 278.03876pt>
 File: /home/michal/development/workspace/CS12320_assign2/doc/img/ss26.png Graph
 ic file (type png)
 
 <use /home/michal/development/workspace/CS12320_assign2/doc/img/ss26.png>
 Package pdftex.def Info: /home/michal/development/workspace/CS12320_assign2/doc
-/img/ss26.png used on input line 233.
+/img/ss26.png used on input line 251.
 (pdftex.def)             Requested size: 268.847pt x 185.24982pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--234
+Underfull \hbox (badness 10000) in paragraph at lines 250--252
 
  []
 
-[19 </home/michal/development/workspace/CS12320_assign2/doc/img/ss24.png> </hom
+[20 </home/michal/development/workspace/CS12320_assign2/doc/img/ss24.png> </hom
 e/michal/development/workspace/CS12320_assign2/doc/img/ss25.png> </home/michal/
-development/workspace/CS12320_assign2/doc/img/ss26.png>] [20] [21]
+development/workspace/CS12320_assign2/doc/img/ss26.png>] [21] [22]
 (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 1656 strings out of 495021
- 30204 string characters out of 6181344
+ 1661 strings out of 495021
+ 30519 string characters out of 6181344
  77293 words of memory out of 5000000
- 4844 multiletter control sequences out of 15000+600000
+ 4848 multiletter control sequences out of 15000+600000
  8977 words of font info for 32 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,6n,23p,296b,193s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,6n,23p,296b,254s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (22 pages, 1309582 bytes).
+Output written on report.pdf (23 pages, 1351961 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 155 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

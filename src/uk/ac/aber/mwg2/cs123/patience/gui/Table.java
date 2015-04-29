@@ -147,6 +147,7 @@ public class Table extends JPanel {
 				packPressed = true;
 			}
 			checkCards(e.getPoint());
+			
 			repaint();
 		}
 		

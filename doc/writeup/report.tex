@@ -83,10 +83,14 @@ the name field blank.
 		whenever game is launched.
 		
 	\item \texttt{Score} is an inner class located inside the \texttt{GameOverDialog}. 
-		It holds an information about the name of the player and his score in an integer
-		format. \texttt{Score} implements the \texttt{Comparable<T>} interface, which 
-		enables the list of scores to be sorted and presented to the user in a
-		descending order.
+		It holds an information about the name of the player, his score and enables the
+		list of scores to be sorted in a descending order. 
+		
+		
+%		in an integer
+%		format. \texttt{Score} implements the \texttt{Comparable<T>} interface, which 
+%		enables the list of scores to be sorted and presented to the user in a
+%		descending order.
 		
 	\item \texttt{ScorePanel} is a GUI \texttt{JPanel} on top of the window. It displays
 		the current score of the player, as well as the highest score recorded in the 
@@ -115,7 +119,19 @@ the name field blank.
 		 tell the \texttt{ScorePanel} to either add 10 points to the current score or
 		 display the "INVALID MOVE" notification. Finally, it will dispach the window 
 		 closing event in case the user wins the game.
-		 
+		 \begin{enumerate}
+			 \item \texttt{Detect mouse pressed event\\
+				Clear the 'invalid move' notification from the panel\\
+				Check if any of the cards contain coordinates of the event\\
+				If so, select this card\\
+				Ask table to update itself
+				}
+			\item \texttt{Detect mouse released event\\
+				If two cards are selected, make a move or unselect if its illegal\\
+				Ask table to update itself\\
+				Check if player won and finish the game if he did
+				}
+		\end{enumerate} 
 	\item \texttt{CardsCollection} is an abstract class which represents a collection of 
 		cards. Internally cards are stored in a list and can be accessed and removed 
 		using provided methods.
@@ -168,6 +184,8 @@ the name field blank.
 		the \texttt{Pack}. If that fails then the game is over as there are no more
 		available moves, and an appropriate event will be dispatched to display the
 		\texttt{GameOverDialog}.
+		
+		\includegraphics[width=\textwidth]{sequence}
 	
 \end{enumerate}
 
