@@ -16,7 +16,9 @@ import javax.swing.JPanel;
 import uk.ac.aber.mwg2.cs123.patience.automation.Bot;
 
 /**
- * 
+ * This class represents a panel with buttons user can click to access
+ * additional functions in the game (display & shuffle the pack and 
+ * automate the gameplay).
  * 
  * @author mwg2
  * @since 1 April 2015

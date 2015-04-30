@@ -1,4 +1,4 @@
-\documentclass[a4paper, 12pt, titlepage]{article}
+\documentclass[a4paper, 11pt, titlepage]{article}
 \setlength{\oddsidemargin}{0in} \setlength{\evensidemargin}{0in}
 \setlength{\textwidth}{6.2in}
 \setlength{\topmargin}{-0.2in} \setlength{\textheight}{8.8in}
@@ -86,12 +86,6 @@ the name field blank.
 		It holds an information about the name of the player, his score and enables the
 		list of scores to be sorted in a descending order. 
 		
-		
-%		in an integer
-%		format. \texttt{Score} implements the \texttt{Comparable<T>} interface, which 
-%		enables the list of scores to be sorted and presented to the user in a
-%		descending order.
-		
 	\item \texttt{ScorePanel} is a GUI \texttt{JPanel} on top of the window. It displays
 		the current score of the player, as well as the highest score recorded in the 
 		past. Object of this class can be notified if an invalid move has been detected 
@@ -132,6 +126,11 @@ the name field blank.
 				Check if player won and finish the game if he did
 				}
 		\end{enumerate} 
+		
+	\item \texttt{ButtonPanel} is located on the bottom of the window and contains
+		buttons user can click to access additional functions. Displaying
+		\& shuffling the pack and automation of the gameplay. 
+		
 	\item \texttt{CardsCollection} is an abstract class which represents a collection of 
 		cards. Internally cards are stored in a list and can be accessed and removed 
 		using provided methods.
@@ -149,7 +148,7 @@ the name field blank.
 	
 	\item \texttt{DrawingArea} is an inner class inside the \texttt{PackDialog}, which 
 		extends the \texttt{JPanel} and overrides the \texttt{paintComponent} method. Its
-		only purpose it to graphically display contents of the \texttt{Pack}.		
+		only purpose is to graphically display contents of the \texttt{Pack}.		
 	
 	\item \texttt{Pile} extends the \texttt{CardsCollection} and represents cards 
 		dealt from the \texttt{Pack} on to the \texttt{Table}. It also holds the 
@@ -200,51 +199,51 @@ the name field blank.
 	\item[SS]1\\\\
 		\includegraphics[width=\textwidth]{ss1}
 	\item[SS]2\\\\
-		\includegraphics[width=\textwidth]{ss2}
+		\includegraphics[width=\textwidth]{ss2} \newpage
 	\item[SS]3\\\\
-%		\includegraphics[width=\textwidth]{ss3}
+		\includegraphics[width=\textwidth]{ss3}
 	\item[SS]4\\\\ 
 		\includegraphics[width=\textwidth]{ss4}
 	\item[SS]5\\\\ 
-		\includegraphics[width=\textwidth]{ss5}
+		\includegraphics[width=\textwidth]{ss5} \newpage
 	\item[SS]6\\\\
 		\includegraphics[width=\textwidth]{ss6}
 	\item[SS]7\\\\ 
 		\includegraphics[width=0.4\textwidth]{ss7}
 	\item[SS]8\\\\ 
-		\includegraphics[width=\textwidth]{ss8}
+		\includegraphics[width=\textwidth]{ss8} \newpage
 	\item[SS]9\\\\ 
 		\includegraphics[width=\textwidth]{ss9}
 	\item[SS]10\\\\ 
-		\includegraphics[width=\textwidth]{ss10}
+		\includegraphics[width=\textwidth]{ss10} \newpage
 	\item[SS]11\\\\ 
 		\includegraphics[width=\textwidth]{ss11}
 	\item[SS]12\\\\ 
-		\includegraphics[width=\textwidth]{ss12}
+		\includegraphics[width=\textwidth]{ss12} \newpage
 	\item[SS]13\\\\ 
 		\includegraphics[width=\textwidth]{ss13}
 	\item[SS]14\\\\ 
-		\includegraphics[width=\textwidth]{ss14}
+		\includegraphics[width=\textwidth]{ss14} \newpage
 	\item[SS]15\\\\ 
 		\includegraphics[width=\textwidth]{ss15}
 	\item[SS]16\\\\ 
-		\includegraphics[width=\textwidth]{ss16}
+		\includegraphics[width=\textwidth]{ss16} \newpage
 	\item[SS]17\\\\ 
 		\includegraphics[width=\textwidth]{ss17}
 	\item[SS]18\\\\ 
-		\includegraphics[width=\textwidth]{ss18}
+		\includegraphics[width=\textwidth]{ss18} \newpage
 	\item[SS]19\\\\ 
 		\includegraphics[width=\textwidth]{ss19}
 	\item[SS]20\\\\ 
-		\includegraphics[width=\textwidth]{ss20}
+		\includegraphics[width=\textwidth]{ss20} \newpage
 	\item[SS]21\\\\ 
 		\includegraphics[width=0.6\textwidth]{ss21}
 	\item[SS]22\\\\ 
-		\includegraphics[width=\textwidth]{ss22}
+		\includegraphics[width=\textwidth]{ss22} \newpage
 	\item[SS]23\\\\ 
 		\includegraphics[width=\textwidth]{ss23}
 	\item[SS]24\\\\ 
-		\includegraphics[width=0.4\textwidth]{ss24}
+		\includegraphics[width=0.4\textwidth]{ss24} \newpage
 	\item[SS]25\\\\ 
 		\includegraphics[width=\textwidth]{ss25}
 	\item[SS]26\\\\ 
@@ -317,7 +316,7 @@ mini-assignments. However starting from scratch, enabled me to go through almost
 every software development life cycle, apart from the "maintanence" one. I enjoyed coding
 itself the most, but the testing experiece will probably help greatly next year and in
 the future career. Because I have fulfilled all the assignment requirements and created 
-a more complex, fully graphical game I would be happy to receive a mark of 90\% for 
+a more complex, fully graphical game, I would be happy to receive a mark of 90\% for 
 this assignment.
 
 \end{document}

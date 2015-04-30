@@ -12,15 +12,26 @@ public class Pair<T> {
 	private T first;
 	private T second;
 	
+	/**
+	 * Create a pair of two objects of the same type
+	 * @param first First object
+	 * @param second Second object
+	 */
 	public Pair(T first, T second) {
 		this.first = first;
 		this.second = second;
 	}
-
+	
+	/**
+	 * @return First object
+	 */
 	public T getFirst() {
 		return first;
 	}
 
+	/**
+	 * @return Second object
+	 */
 	public T getSecond() {
 		return second;
 	}

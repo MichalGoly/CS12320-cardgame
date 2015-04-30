@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {4.1}Test tables}{8}
 \contentsline {subsection}{\numberline {4.2}Screenshots}{10}
 \contentsline {section}{\numberline {5}Evaluation}{21}
-\contentsline {subsection}{\numberline {5.1}Completely graphical user interface}{21}
-\contentsline {subsection}{\numberline {5.2}Initial implementation}{21}
-\contentsline {subsection}{\numberline {5.3}Towards the working application}{21}
-\contentsline {subsection}{\numberline {5.4}Summary}{22}
+\contentsline {subsection}{\numberline {5.1}Completely graphical user interface}{22}
+\contentsline {subsection}{\numberline {5.2}Initial implementation}{22}
+\contentsline {subsection}{\numberline {5.3}Towards the working application}{22}
+\contentsline {subsection}{\numberline {5.4}Summary}{23}
