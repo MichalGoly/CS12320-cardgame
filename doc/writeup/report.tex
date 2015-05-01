@@ -68,7 +68,7 @@ the name field blank.
 \begin{enumerate}
 	\item \texttt{Game} class contains the \texttt{main} method and is therefore the 
 		starting point of the application. It also extends the \texttt{JFrame} class and 
-		takes care of the initialzation and layout of the \texttt{ScorePanel}, 
+		takes care of the initialization and layout of the \texttt{ScorePanel}, 
 		\texttt{Table} and \texttt{ButtonPanel} components within itself.
 		
 	\item \texttt{WindowHandler} is an inner class implemented inside the \texttt{Game}
@@ -111,7 +111,7 @@ the name field blank.
 		\texttt{MouseHandler} will try to make a move by calling the \texttt{isMoveValid}
 		 and \texttt{makeMove} methods from the \texttt{Pile} object. Then it will 
 		 tell the \texttt{ScorePanel} to either add 10 points to the current score or
-		 display the "INVALID MOVE" notification. Finally, it will dispach the window 
+		 display the "INVALID MOVE" notification. Finally, it will dispatch the window 
 		 closing event in case the user wins the game.
 		 \begin{enumerate}
 			 \item \texttt{Detect mouse pressed event\\
@@ -154,7 +154,7 @@ the name field blank.
 		dealt from the \texttt{Pack} on to the \texttt{Table}. It also holds the 
 		information about the indexes of the cards which are currently selected. It has 
 		two very important methods \texttt{isMoveValid} and \texttt{makeMove}. First one 
-		checks if the two selected cards correspont to any of the known moves in the 
+		checks if the two selected cards correspond to any of the known moves in the 
 		game, while the second one actually makes the move. \texttt{isMoveValid} has to 
 		be called before the other one. 
 
@@ -252,7 +252,7 @@ the name field blank.
 \section{Evaluation}
 I began by reading the requirements specification and trying to understand the rules
 of the game. Unlike in the previous mini-assignments, we did not receive an initial 
-implementiation of the program. Therefore I realised that I should not rush into 
+implementation of the program. Therefore I realised that I should not rush into 
 writing the code, before creating a simple design of the system. At this point I knew,
 that I am going to need to represent playing cards, their suits and values, pack and 
 some sort of collection of cards the player could select. 
@@ -274,8 +274,8 @@ Instead it displays a modal dialog box which graphically presents cards in the p
 \texttt{Card} was the first class I wrote and straight away I knew that apart from 
 keeping the track of its suit and value, it would also need to know whether it has been
 pressed or not. A boolean instance variable was a sufficient solution to that problem. 
-Subsequently, I moved on to create a \texttt{Pack} which would initialy store 52 ordered
-playing cards. \texttt{Pile} class represents the cards which were delt from the pack
+Subsequently, I moved on to create a \texttt{Pack} which would initially store 52 ordered
+playing cards. \texttt{Pile} class represents the cards which were dealt from the pack
 on to the table. Because it has similar basic behaviour as the \texttt{Pack}, I have
 decided to use inheritance and abstract this functionality into a parent class called
 \texttt{CardsCollection}. 
@@ -284,12 +284,12 @@ decided to use inheritance and abstract this functionality into a parent class c
 I knew that the GUI framework provided, would not be sufficient to make the game 
 completely "terminal free". Instead I started from scratch, keeping in mind the MVC 
 design objectives I have read about in the past. I wanted to keep the data, view and 
-controller seperate and began to implement the GUI. 
+controller separate and began to implement the GUI. 
 
 User interface (view) consists of the three main components:
 \begin{itemize}
 	\item \texttt{ScorePanel} which displays current score, highest score ever recorded
-		and an "invalid move" warning when an illigal move has been detected
+		and an "invalid move" warning when an illegal move has been detected
 	
 	\item \texttt{Table} which is a "drawing area" on which cards are being drawn
 	
@@ -313,8 +313,8 @@ Most of the game logic (controller) has been implemented in these classes:
 \subsection{Summary}
 This assignment was definitely more difficult and complex than the previous two 
 mini-assignments. However starting from scratch, enabled me to go through almost
-every software development life cycle, apart from the "maintanence" one. I enjoyed coding
-itself the most, but the testing experiece will probably help greatly next year and in
+every software development life cycle, apart from the "maintenance" one. I enjoyed coding
+itself the most, but the testing experience will probably help greatly next year and in
 the future career. Because I have fulfilled all the assignment requirements and created 
 a more complex, fully graphical game, I would be happy to receive a mark of 90\% for 
 this assignment.
