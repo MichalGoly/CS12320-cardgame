@@ -32,10 +32,8 @@ public class ButtonPanel extends JPanel {
 	private final int DEFAULT_HEIGHT = 70;
 	
 	/**
-	 * TODO
-	 * @param game
-	 * @param table
-	 * @param scorePanel
+	 * Constructs a new ButtonPanel object which will contain buttons user can 
+	 * click to access additional functions. 
 	 */
 	public ButtonPanel(Game game, Table table, ScorePanel scorePanel) {
 		this.game = game;
@@ -48,24 +46,31 @@ public class ButtonPanel extends JPanel {
 		setLayout(new FlowLayout());
 		setPreferredSize(new Dimension(table.getWidth(), DEFAULT_HEIGHT));
 
-		JPanel gamePanel = new JPanel();
-		gamePanel.setBorder(BorderFactory.createTitledBorder("Pack"));
-		gamePanel.add(new JButton(new AbstractAction("Display") {
+		add(createPackPanel());
+		add(createAutomationPanel());
+	}
+	
+	private JPanel createPackPanel() {
+		JPanel packPanel = new JPanel();
+		packPanel.setBorder(BorderFactory.createTitledBorder("Pack"));
+		packPanel.add(new JButton(new AbstractAction("Display") {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				table.getPack().diplayPack();
 			}
 		}));
-		gamePanel.add(new JButton(new AbstractAction("Shuffle") {
+		packPanel.add(new JButton(new AbstractAction("Shuffle") {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				table.getPack().shuffle();
 			}
 		}));
-		add(gamePanel);
-
+		return packPanel;		
+	}
+	
+	private JPanel createAutomationPanel() {
 		JPanel automationPanel = new JPanel();
 		automationPanel.setBorder(BorderFactory
 				.createTitledBorder("Play for me"));
@@ -81,6 +86,12 @@ public class ButtonPanel extends JPanel {
 				}
 			}
 		}));
+		automationPanel.add(createXTimesButton());
+		
+		return automationPanel;
+	}
+
+	private JButton createXTimesButton() {
 		JButton xTimesButton = new JButton("x Times");
 		xTimesButton.addActionListener(new ActionListener() {
 
@@ -115,7 +126,6 @@ public class ButtonPanel extends JPanel {
 				}
 			}
 		});
-		automationPanel.add(xTimesButton);
-		add(automationPanel);
+		return xTimesButton;
 	}
 }

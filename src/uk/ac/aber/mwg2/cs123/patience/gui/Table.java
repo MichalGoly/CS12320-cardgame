@@ -21,8 +21,6 @@ import uk.ac.aber.mwg2.cs123.patience.cards.Pile;
  * User can manipulate cards by clicking and selecting them. If the move is
  * supported by the game, playing table will be updated and repainted.
  * 
- * TODO better explenation later on
- * 
  * @author mwg2
  * @since 26 March 2015
  *

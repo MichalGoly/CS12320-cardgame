@@ -9,7 +9,7 @@ import uk.ac.aber.mwg2.cs123.patience.gui.ScorePanel;
 import uk.ac.aber.mwg2.cs123.patience.gui.Table;
 
 /**
- * Bot class can be used to automate the game. 
+ * Bot object can be used to automate the gameplay. 
  * 
  * @author mwg2
  * @since 1 April 2015
@@ -21,6 +21,11 @@ public class Bot {
 	private Pack pack;
 	private ScorePanel scorePanel;
 	
+	/**
+	 * Create a Bot object which can be used to automate the gameplay. 
+	 * @param table Table where cards are drawn
+	 * @param scorePanel A panel where current score is drawn
+	 */
 	public Bot(Table table, ScorePanel scorePanel) {
 		this.table = table;
 		this.scorePanel = scorePanel;
