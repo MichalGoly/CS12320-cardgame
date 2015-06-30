@@ -7,6 +7,16 @@ read about the code I wrote in **report.pdf** file.
 
 ## INSTALLATION
 
-Simply clone the repository and run
-**java -cp bin uk.ac.aber.mwg2.cs123.patience.gui.Game**
+Simply clone the repository and run the 
+**java -cp bin uk.ac.aber.mwg2.cs123.patience.gui.Game** command in your terminal
 within the *CS12320-cardgame* directory.
+
+## MARK RECEIVED
+**95%** overall
+
+- Documentation 24/25
+- Implementation 29/30
+- Inheritance 10/10
+- Testing 8/10
+- Evaluation 5/5
+- Flair 19/20
