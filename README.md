@@ -8,5 +8,5 @@ read about the code I wrote in **report.pdf** file.
 ## INSTALLATION
 
 Simply clone the repository and run
-<code>java -cp bin uk.ac.aber.mwg2.cs123.patience.gui.Game</code>
+**java -cp bin uk.ac.aber.mwg2.cs123.patience.gui.Game**
 within the *CS12320-cardgame* directory.
