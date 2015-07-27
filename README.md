@@ -5,6 +5,8 @@ of a programming assignment during my first year at the Aberystwyth University.
 You can find the requirements specification in the **assignment.pdf** file and
 read about the code I wrote in the **report.pdf** file.
 
+![screenshot](/../debb91d075dcc108759aaa00555c1dba082981df/doc/img/ss12.png?raw=true "Game screenshot")
+
 ## INSTALLATION
 
 Simply clone the repository and run the 
